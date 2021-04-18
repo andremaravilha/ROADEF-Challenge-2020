@@ -10,6 +10,7 @@
 #include "roadef2020.h"
 #include "heur_greedy.h"
 #include "heur_benders.h"
+#include "mip.h"
 
 
 /**
@@ -152,6 +153,9 @@ int main(int argc, char** argv) {
 
         // Get a starting solution
         //auto [schedule, objective, mean_risk, expected_excess] = orcs::roadef2020::greedy(problem);
+
+//        auto [schedule, objective, mean_risk, expected_excess] = orcs::roadef2020::mip(problem,
+//                time_limit, timer, seed, verbose);
 
         auto [schedule, objective, mean_risk, expected_excess] = orcs::roadef2020::benders_heuristic(problem,
                 time_limit, timer, seed, verbose);

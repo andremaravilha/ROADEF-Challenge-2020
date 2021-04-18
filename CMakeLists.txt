@@ -56,7 +56,8 @@ set(SOURCE_FILES
         src/main.cpp
         src/roadef2020.h src/roadef2020.cpp
         src/heur_greedy.h src/heur_greedy.cpp
-        src/heur_benders.h src/heur_benders.cpp)
+        src/heur_benders.h src/heur_benders.cpp
+        src/mip.h src/mip.cpp)
 
 
 # ==============================================================================
